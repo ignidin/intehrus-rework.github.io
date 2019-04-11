@@ -36,3 +36,34 @@ body {
         letter-spacing: 0;
     }
   }
+
+.section__lead {
+	background-color: #fafafa;
+	min-height: 400px;
+}
+
+.lead__heading {
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 3rem;
+}
+
+@media (max-width: 575px) {
+	.lead__heading {
+		line-height: 2.2rem;
+	}
+}
+
+.lead__text {
+	font-size: 1.2rem;
+	line-height: 2.3rem;
+	font-family: "Roboto", Tahoma, sans-serif;
+	font-weight: 300;
+}
+
+@media (max-width: 575px) {
+	.lead__text {
+		font-size: 1.1rem;
+		line-height: 2rem;
+	}
+}
