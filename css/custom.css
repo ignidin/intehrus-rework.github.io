@@ -14,6 +14,33 @@ body {
     color: #f7d14b;
 }
 
+.section-heading h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
+
+.section-heading h2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-heading h2:before,
+.section-heading h2:after {
+  content: '';
+  border-top: 1px solid #ebebeb;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+.section-heading h2:after {
+  margin: 0 0 0 20px;
+}
+
 .section__hero {
     background: url("/img/hero-bg.jpg") no-repeat center;
     width: 100%;
@@ -63,7 +90,51 @@ body {
 
 @media (max-width: 575px) {
 	.lead__text {
-		font-size: 1.1rem;
-		line-height: 2rem;
+		font-size: 1.0rem;
+		line-height: 1.8rem;
 	}
+}
+
+.card {
+  border: none;
+}
+.card-title {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-text {
+  line-height: 1.8rem;
+}
+
+.offer-list__item .btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Roboto", Tahoma, sans-serif;
+}
+
+.offer-list__item .btn__ghost {
+  border: 2px solid #494c64;
+  font-weight: 300;
+}
+
+.offer-list__item .btn__ghost:hover {
+  border-color: #f7d14b;
+  cursor: pointer;
+}
+.offer-list__item .btn__ghost:active {
+  border-color: #afafaf;
+}
+
+.offer-list__item .btn__cta {
+  background-color: #f7d14b;
+  color: #fafafa;
+  font-weight: bold;
+}
+
+.offer-list__item .btn__cta:hover {
+  background-color: #494c64;
 }
