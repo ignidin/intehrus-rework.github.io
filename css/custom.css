@@ -2,7 +2,7 @@ body {
     font-family: "PT Sans", Tahoma, sans-serif;
     color: #494c64;
 }
-  
+/* Navbar */
 .navbar-light .navbar-nav .nav-link {
     text-transform: uppercase;
     font-weight: bold;
@@ -14,6 +14,7 @@ body {
     color: #f7d14b;
 }
 
+/* Section heading */
 .section-heading h2 {
   font-weight: bold;
   text-transform: uppercase;
@@ -41,6 +42,7 @@ body {
   margin: 0 0 0 20px;
 }
 
+/* Hero section */
 .section__hero {
     background: url("/img/hero-bg.jpg") no-repeat center;
     width: 100%;
@@ -72,7 +74,7 @@ body {
     }
 }
 
-
+/* Lead section */
 .section__lead {
 	background-color: #fafafa;
 	min-height: 400px;
@@ -104,10 +106,14 @@ body {
 	}
 }
 
-.card {
+/* Offer section */
+/* Cards */
+.section__offer .card {
   border: none;
 }
-.card-title {
+
+.section__offer .card-title,
+.section__features .card-title {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-transform: uppercase;
@@ -115,21 +121,23 @@ body {
 }
 
 @media (min-width: 577px) and (max-width: 767px) {
-  .card-title {
+  .section__offer .card-title {
     font-size: 1.05rem;
   }
 }
 
-.card-text {
+.section__offer .card-text {
   line-height: 1.8rem;
 }
 
 @media (max-width: 991px) {
-  .section__offer .container {
+  .section__offer .container,
+  .section__features .container {
     min-width: 95%;
   }
 }
 
+/* Buttons */
 .offer-list__item .btn {
   width: 100%;
   text-transform: uppercase;
@@ -159,3 +167,34 @@ body {
 .offer-list__item .btn__cta:hover {
   background-color: #494c64;
 }
+
+/* Features section */
+/* Cards */
+.features-list .card {
+  border: none;
+  background-color: #fafafa;
+  border-radius: 15px;
+}
+
+.features-list i {
+  color: #91a0ac;
+  position: relative;
+}
+
+.features-list .card-text {
+  line-height: 1.7rem;
+}
+
+.cta-lead {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.btn-contacts {
+  background: #f7d14b;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fafafa;
+}
+
+
