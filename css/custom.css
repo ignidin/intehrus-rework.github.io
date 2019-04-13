@@ -59,10 +59,19 @@ body {
 @media (max-width: 575px) {
     .section__hero h1 {
         font-size: 2.2rem;
+        line-height: 2.5rem;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .section__hero h1 {
+        font-size: 1.8rem;
         line-height: 2.9rem;
         letter-spacing: 0;
     }
-  }
+}
+
 
 .section__lead {
 	background-color: #fafafa;
@@ -105,8 +114,20 @@ body {
   font-weight: bold;
 }
 
+@media (min-width: 577px) and (max-width: 767px) {
+  .card-title {
+    font-size: 1.05rem;
+  }
+}
+
 .card-text {
   line-height: 1.8rem;
+}
+
+@media (max-width: 991px) {
+  .section__offer .container {
+    min-width: 95%;
+  }
 }
 
 .offer-list__item .btn {
