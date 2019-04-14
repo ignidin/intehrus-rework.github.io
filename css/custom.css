@@ -11,7 +11,8 @@ body {
 }
   
 .navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:active {
+.navbar-light .navbar-nav .nav-link:active,
+.navbar-light .navbar-nav .nav-link.active {
     color: #f7d14b;
 }
 
@@ -140,34 +141,35 @@ body {
 }
 
 /* Buttons */
-.offer-list__item .btn {
+.btn {
   width: 100%;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-family: "Roboto", Tahoma, sans-serif;
 }
 
-.offer-list__item .btn__ghost {
+.btn__ghost {
   border: 2px solid #494c64;
   font-weight: 300;
 }
 
-.offer-list__item .btn__ghost:hover {
+.btn__ghost:hover {
   border-color: #f7d14b;
   cursor: pointer;
 }
-.offer-list__item .btn__ghost:active {
+.btn__ghost:active {
   border-color: #afafaf;
 }
 
-.offer-list__item .btn__cta {
+.btn__cta {
   background-color: #f7d14b;
   color: #fafafa;
   font-weight: bold;
 }
 
-.offer-list__item .btn__cta:hover {
+.btn__cta:hover {
   background-color: #494c64;
+  color: #fafafa;
 }
 
 /* Features section */
@@ -192,11 +194,12 @@ body {
   line-height: 2rem;
 }
 
-.btn-contacts {
+.btn__contacts {
   background: #f7d14b;
   text-transform: uppercase;
   font-weight: bold;
   color: #fafafa;
+  width: 250px;
 }
 
 /* Import section */
@@ -235,12 +238,14 @@ body {
   font-weight: bold;
 }
 
-.btn-footer {
+.btn__footer {
   background-color: #ebebeb;
   color: #666;
   box-shadow: 0 3px 0 #cfcfcf;
   width: 170px;
   font-size: 0.8rem;
+  text-transform: none;
+  font-family: "PT Sans", Tahoma, sans-serif;
 }
 
 .sitemap-link {
@@ -256,4 +261,44 @@ body {
   text-decoration: none;
   color: #494c64;
   cursor: pointer;
+}
+
+/* Tools page */
+/* Hero section */
+.section-tools .section__hero {
+  background: url("/img/header_tools_white-2.jpg") no-repeat center;
+  width: 100%;
+  height: 600px;
+  background-size: cover;				
+}
+
+.section-tools h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 4.5rem;
+}
+
+@media (max-width: 575px) {
+ .section-tools h1 {
+    font-size: 2.0rem;
+    line-height: 2.9rem;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 320px) {
+ .section-tools h1 {
+    font-size: 1.3rem;
+    line-height: 2.9rem;
+    letter-spacing: 0;
+  }
+}
+
+.section__lead {
+  min-height: 200px;
+  background-color: #fafafa;
+}
+
+.section__lead .btn {
+  width: 250px;
 }
