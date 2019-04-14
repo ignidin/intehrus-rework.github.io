@@ -208,3 +208,8 @@ body {
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
+
+/* Clients section */
+.section__clients img {
+  max-width: 100%;
+}
