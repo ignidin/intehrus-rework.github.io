@@ -231,7 +231,7 @@ body {
 }
 
 .footer-address__address {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .footer-heading {
@@ -243,13 +243,13 @@ body {
   color: #666;
   box-shadow: 0 3px 0 #cfcfcf;
   width: 170px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-transform: none;
   font-family: "PT Sans", Tahoma, sans-serif;
 }
 
 .sitemap-link {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #494c64;
   padding: 3px;
   border: 1px solid #f7d14b;
@@ -265,14 +265,15 @@ body {
 
 /* Tools page */
 /* Hero section */
-.section-tools .section__hero {
+.section-tools.section__hero {
   background: url("/img/header_tools_white-2.jpg") no-repeat center;
   width: 100%;
   height: 600px;
   background-size: cover;				
 }
 
-.section-tools h1 {
+.section-tools h1,
+.section-inserts h1 {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 4.5rem;
@@ -301,4 +302,13 @@ body {
 
 .section__lead .btn {
   width: 250px;
+}
+
+/* Inserts page */
+/* Hero section */
+.section-inserts.section__hero {
+  background: url("/img/header_inserts_white-3.jpg") no-repeat center;
+  width: 100%;
+  height: 600px;
+  background-size: cover;				
 }
