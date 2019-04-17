@@ -115,7 +115,8 @@ body {
 }
 
 .section__offer .card-title,
-.section__features .card-title {
+.section__features .card-title,
+.section-inserts-features h3 {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-transform: uppercase;
@@ -130,7 +131,6 @@ body {
 
 .section__offer .card-text {
   line-height: 1.8rem;
-  min-height: 9rem;
 }
 
 @media (max-width: 991px) {
@@ -311,4 +311,23 @@ body {
   width: 100%;
   height: 600px;
   background-size: cover;				
+}
+
+/* Promo section */
+.inserts-promo__item img {
+  width: 100%;
+}
+
+.section-promo {
+  background-color: #fafafa;
+}
+
+.promo-info {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 320px) and (max-width: 415px) {
+  .inserts-promo-list p {
+    min-height: 120px;
+  }
 }
