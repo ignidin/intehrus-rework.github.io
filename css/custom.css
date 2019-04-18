@@ -2,6 +2,7 @@ body {
     font-family: "PT Sans", Tahoma, sans-serif;
     color: #494c64;
 }
+
 /* Navbar */
 .navbar-light .navbar-nav .nav-link {
     text-transform: uppercase;
@@ -142,7 +143,7 @@ body {
 
 /* Buttons */
 .btn {
-  width: 100%;
+  width: 100% !important;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-family: "Roboto", Tahoma, sans-serif;
@@ -157,17 +158,20 @@ body {
   border-color: #f7d14b;
   cursor: pointer;
 }
+
 .btn__ghost:active {
   border-color: #afafaf;
 }
 
-.btn__cta {
+.btn__cta,
+.section-inserts-lead .promo-info .btn__cta {
   background-color: #f7d14b;
   color: #fafafa;
   font-weight: bold;
 }
 
-.btn__cta:hover {
+.btn__cta:hover,
+.section-inserts-lead .promo-info .btn__cta:hover {
   background-color: #494c64;
   color: #fafafa;
 }
@@ -318,7 +322,8 @@ body {
   width: 100%;
 }
 
-.section-promo {
+.section-promo,
+.section-inserts-lead {
   background-color: #fafafa;
 }
 
@@ -330,4 +335,36 @@ body {
   .inserts-promo-list p {
     min-height: 120px;
   }
+}
+
+/* Inserts lead section */
+.section-inserts-lead .promo-info .btn {
+  width: 200px;
+}
+
+.btn__form {
+  color: #5f7482;
+  border-radius: 10px;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.accordion,
+.accordion .card,
+.accordion .card-header,
+.accordion .offer-request-form,
+.btn__form {
+  background-color: #dfe5e8;
+}
+
+.accordion .card-header {
+  padding: 5px;
+  border-radius: 10px;
+  border-color:transparent;
+}
+
+.accordion .offer-request-form {
+  font-size: 1rem;  
 }
