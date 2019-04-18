@@ -359,6 +359,15 @@ body {
   background-color: #dfe5e8;
 }
 
+.accordion {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.accordion .card {
+  border: none;
+}
+
 .accordion .card-header {
   padding: 5px;
   border-radius: 10px;
