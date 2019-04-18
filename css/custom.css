@@ -2,6 +2,7 @@ body {
     font-family: "PT Sans", Tahoma, sans-serif;
     color: #494c64;
 }
+
 /* Navbar */
 .navbar-light .navbar-nav .nav-link {
     text-transform: uppercase;
@@ -115,7 +116,8 @@ body {
 }
 
 .section__offer .card-title,
-.section__features .card-title {
+.section__features .card-title,
+.section-inserts-features h3 {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-transform: uppercase;
@@ -130,7 +132,6 @@ body {
 
 .section__offer .card-text {
   line-height: 1.8rem;
-  min-height: 9rem;
 }
 
 @media (max-width: 991px) {
@@ -142,7 +143,7 @@ body {
 
 /* Buttons */
 .btn {
-  width: 100%;
+  width: 100% !important;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-family: "Roboto", Tahoma, sans-serif;
@@ -157,17 +158,20 @@ body {
   border-color: #f7d14b;
   cursor: pointer;
 }
+
 .btn__ghost:active {
   border-color: #afafaf;
 }
 
-.btn__cta {
+.btn__cta,
+.section-inserts-lead .promo-info .btn__cta {
   background-color: #f7d14b;
   color: #fafafa;
   font-weight: bold;
 }
 
-.btn__cta:hover {
+.btn__cta:hover,
+.section-inserts-lead .promo-info .btn__cta:hover {
   background-color: #494c64;
   color: #fafafa;
 }
@@ -231,7 +235,7 @@ body {
 }
 
 .footer-address__address {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .footer-heading {
@@ -243,13 +247,13 @@ body {
   color: #666;
   box-shadow: 0 3px 0 #cfcfcf;
   width: 170px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-transform: none;
   font-family: "PT Sans", Tahoma, sans-serif;
 }
 
 .sitemap-link {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #494c64;
   padding: 3px;
   border: 1px solid #f7d14b;
@@ -265,14 +269,15 @@ body {
 
 /* Tools page */
 /* Hero section */
-.section-tools .section__hero {
+.section-tools.section__hero {
   background: url("/img/header_tools_white-2.jpg") no-repeat center;
   width: 100%;
   height: 600px;
   background-size: cover;				
 }
 
-.section-tools h1 {
+.section-tools h1,
+.section-inserts h1 {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 4.5rem;
@@ -301,4 +306,65 @@ body {
 
 .section__lead .btn {
   width: 250px;
+}
+
+/* Inserts page */
+/* Hero section */
+.section-inserts.section__hero {
+  background: url("/img/header_inserts_white-3.jpg") no-repeat center;
+  width: 100%;
+  height: 600px;
+  background-size: cover;				
+}
+
+/* Promo section */
+.inserts-promo__item img {
+  width: 100%;
+}
+
+.section-promo,
+.section-inserts-lead {
+  background-color: #fafafa;
+}
+
+.promo-info {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 320px) and (max-width: 415px) {
+  .inserts-promo-list p {
+    min-height: 120px;
+  }
+}
+
+/* Inserts lead section */
+.section-inserts-lead .promo-info .btn {
+  width: 200px;
+}
+
+.btn__form {
+  color: #5f7482;
+  border-radius: 10px;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.accordion,
+.accordion .card,
+.accordion .card-header,
+.accordion .offer-request-form,
+.btn__form {
+  background-color: #dfe5e8;
+}
+
+.accordion .card-header {
+  padding: 5px;
+  border-radius: 10px;
+  border-color:transparent;
+}
+
+.accordion .offer-request-form {
+  font-size: 1rem;  
 }
