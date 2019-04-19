@@ -393,3 +393,40 @@ body {
 .lead__img {
  width: 100%;
 }
+
+.section-about-goal {
+  background-color: #fafafa;
+  font-size: 1.5rem;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 575px) {
+	.section-about-goal p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+	}
+}
+
+.competence-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.competence-list li {
+  margin-bottom: 30px;
+  
+}
+
+.competence-list__items span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.competence-list__items i {
+  color: #91a0ac;
+  display: inline-block;
+  width: 35px; 
+  font-size: 1.4rem;
+}
