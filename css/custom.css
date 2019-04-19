@@ -369,11 +369,13 @@ body {
 }
 
 .accordion .card-header {
-  padding: 5px;
-  border-radius: 10px;
   border-color:transparent;
 }
 
 .accordion .offer-request-form {
-  font-size: 1rem;  
+  font-size: 0.8rem;  
+}
+
+.accordion input[type=text] {
+  background-color: #fafafa;
 }
