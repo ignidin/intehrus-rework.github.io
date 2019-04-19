@@ -46,14 +46,17 @@ body {
 }
 
 /* Hero section */
-.section__hero {
-    background: url("/img/hero-bg.jpg") no-repeat center;
+.section-hero {
     width: 100%;
     height: 600px;
-		background-size: cover;				
+		background-size: cover !important;				
 }
 
-.section__hero h1 {
+.section-header.section-hero {
+  background: url("/img/hero-bg.jpg") no-repeat center;
+}
+
+.section-hero h1 {
     font-size: 2.9rem;
     color: #fafafa;
     border: 4px solid #f7d14b;
@@ -62,7 +65,7 @@ body {
 }
 
 @media (max-width: 575px) {
-    .section__hero h1 {
+    .section-hero h1 {
         font-size: 2.2rem;
         line-height: 2.5rem;
         letter-spacing: 0;
@@ -70,7 +73,7 @@ body {
 }
 
 @media (max-width: 320px) {
-    .section__hero h1 {
+    .section-hero h1 {
         font-size: 1.8rem;
         line-height: 2.9rem;
         letter-spacing: 0;
@@ -269,15 +272,14 @@ body {
 
 /* Tools page */
 /* Hero section */
-.section-tools.section__hero {
+.section-tools.section-hero {
   background: url("/img/header_tools_white-2.jpg") no-repeat center;
-  width: 100%;
-  height: 600px;
-  background-size: cover;				
+  
 }
 
 .section-tools h1,
-.section-inserts h1 {
+.section-inserts h1,
+.section-about h1 {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 4.5rem;
@@ -310,11 +312,8 @@ body {
 
 /* Inserts page */
 /* Hero section */
-.section-inserts.section__hero {
-  background: url("/img/header_inserts_white-3.jpg") no-repeat center;
-  width: 100%;
-  height: 600px;
-  background-size: cover;				
+.section-inserts.section-hero {
+  background: url("/img/header_inserts_white-3.jpg") no-repeat center;		
 }
 
 /* Promo section */
@@ -378,4 +377,19 @@ body {
 
 .accordion input[type=text] {
   background-color: #fafafa;
+}
+
+/* About page */
+/* Heading section */
+.section-about.section-hero {
+  background: url("/img/about__hero.jpg") no-repeat center;
+}
+
+.lead.lead__text {
+  font-size: 1.0rem;
+	line-height: 2.0rem;
+}
+
+.lead__img {
+ width: 100%;
 }
