@@ -139,7 +139,8 @@ body {
 
 @media (max-width: 991px) {
   .section__offer .container,
-  .section__features .container {
+  .section__features .container,
+  .section-competence .container {
     min-width: 95%;
   }
 }
@@ -408,6 +409,16 @@ body {
 	}
 }
 
+/* Competence items list */
+.competence-list li {
+  margin-bottom: 30px;
+}
+
+.competence-list__items i {
+  color: #91a0ac;
+  font-size: 1.4rem;
+}
+/* 
 .competence-list ul {
   list-style: none;
   padding: 0;
@@ -415,7 +426,6 @@ body {
 
 .competence-list li {
   margin-bottom: 30px;
-  
 }
 
 .competence-list__items span {
@@ -429,4 +439,4 @@ body {
   display: inline-block;
   width: 35px; 
   font-size: 1.4rem;
-}
+} */
