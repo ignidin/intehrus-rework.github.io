@@ -410,14 +410,38 @@ body {
 }
 
 /* Competence items list */
-.competence-list li {
-  margin-bottom: 30px;
+
+
+
+.competence-list__img img {
+  width: 100%;
 }
 
-.competence-list__items i {
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-item__icon,
+.list-item__text {
+  display: flex;
+}
+
+.list-item__icon {
   color: #91a0ac;
   font-size: 1.4rem;
+  min-width: 50px;
+  justify-content: center;
 }
+
+.list-item__text {
+  font-size: 1rem;;
+  line-height: 1rem;
+}
+
+
+
 /* 
 .competence-list ul {
   list-style: none;
