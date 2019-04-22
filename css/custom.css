@@ -441,11 +441,12 @@ body {
 }
 
 /* Production section */
-
-.production-text {
+.production-text,
+.technopolice-text {
   line-height: 2rem;
 }
 
-.production-logo img {
+.production-logo img,
+.technopolice-text img {
   width: 100%;
 }
