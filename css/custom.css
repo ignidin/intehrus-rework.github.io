@@ -440,27 +440,12 @@ body {
   line-height: 1rem;
 }
 
+/* Production section */
 
-
-/* 
-.competence-list ul {
-  list-style: none;
-  padding: 0;
+.production-text {
+  line-height: 2rem;
 }
 
-.competence-list li {
-  margin-bottom: 30px;
+.production-logo img {
+  width: 100%;
 }
-
-.competence-list__items span {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.competence-list__items i {
-  color: #91a0ac;
-  display: inline-block;
-  width: 35px; 
-  font-size: 1.4rem;
-} */
