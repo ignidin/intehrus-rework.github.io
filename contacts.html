@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:300,400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
+  <title>Контакты — НПП ИНТЕХРУС – российский твердосплавный инструмент</title>
+</head>
+
+<body>
+  <div class="overflow-hidden">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="http://www.intehrus.ru"><img src="img/logo-2x.png" width="170"
+              alt="НПП Интехрус"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks"
+            aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarLinks">
+            <div class="navbar-nav ml-auto align-items-center">
+              <a class="nav-item nav-link" href="index.html">Главная страница</a>
+              <a class="nav-item nav-link" href="tools.html">Осевой инструмент</a>
+              <a class="nav-item nav-link" href="inserts.html">Сменные пластины</a>
+              <a class="nav-item nav-link" href="about.html">О компании</a>
+              <a class="nav-item nav-link active" href="contacts.html">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section-contacts section-hero d-flex align-items-center">
+      <div class="container">
+        <h1 class="text-center p-5">
+          Контакты
+        </h1>
+      </div>
+    </section>
+
+    <section class="section-address py-5">
+      <div class="container">
+        <div class="section-heading mb-5">
+          <h2>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ<br>
+            НАУЧНО-ПРОИЗВОДСТВЕННОЕ ПРЕДПРИЯТИЕ «ИНТЕХРУС»</h2>
+        </div>
+        <div class="row">
+          <div class="address-contacts col-lg-4">
+            <div class="row">
+              <div class="address-contacts__contacts col-md-5 col-lg-12">
+                <h3>Контакты:</h3>
+                <p>
+                  <b>Тел. / Факс:</b> +7 (495) 540-43-96<br>
+                  <b>Моб.:</b> +7 (903) 749-10-66<br>
+                  <b>E-mail:</b> info@intehrus.ru
+                </p>
+              </div>
+              <div class="address-contacts__address col-md-7 col-lg-12">
+                <h3>Адрес:</h3>
+                <p>
+                  <b>Офис:</b> 117461, г. Москва, ул. Каховка, д. 10, корп. 3<br>
+                  <b>Производство:</b> 117218, г. Москва, ул. Дмитрия Ульянова, д. 42, стр. 1
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="address-map col-md col-lg-8">
+            <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+            <div id="YMaps_0" class="YMaps">
+            </div>
+            <script type="text/javascript">
+              ymaps.ready(init);
+
+              function init() {
+                var myMap = new ymaps.Map("YMaps_0", {
+                  center: [55.654157, 37.579789],
+                  zoom: 16
+                });
+                myMap.controls.add("routeEditor");
+
+                myPlacemark_0 = new ymaps.Placemark([55.654157, 37.579789], { iconContent: "ООО «НПП ИНТЕХРУС»", balloonContentHeader: "ООО «НПП ИНТЕХРУС»", balloonContentBody: "Производство российского твердосплавного инструмента", balloonContentFooter: "Адрес: Москва, ул. Каховка 10/3.­ Тел.: +7 (495) 540-43-96, +7 (903) 749-10-66" }, { preset: 'islands#yellowStretchyIcon' }, {}
+                );
+                myMap.geoObjects.add(myPlacemark_0);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
