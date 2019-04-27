@@ -512,6 +512,10 @@ body {
 
 /* Feedback form */
 
+.feedback h3 {
+  line-height: 2rem;
+}
+
 .form-group input {
   background-color: #f4f6f7;
   border-radius: 0;
@@ -520,4 +524,5 @@ body {
   margin-bottom: 2rem;
   padding-left: 1.1rem;
 }
+
 
